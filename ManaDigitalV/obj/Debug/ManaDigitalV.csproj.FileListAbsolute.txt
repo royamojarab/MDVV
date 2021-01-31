@@ -11,3 +11,7 @@ C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.cspr
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.csproj.CopyComplete
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.exe
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.pdb
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.csprojAssemblyReference.cache
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Form1.resources
