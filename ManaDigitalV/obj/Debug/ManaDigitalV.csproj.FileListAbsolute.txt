@@ -1,0 +1,13 @@
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\ManaDigitalV.exe.config
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\ManaDigitalV.exe
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\ManaDigitalV.pdb
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\EntityFramework.dll
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\EntityFramework.xml
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Properties.Resources.resources
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.csproj.GenerateResource.cache
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.csproj.CoreCompileInputs.cache
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.csproj.CopyComplete
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.exe
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.pdb
