@@ -18,5 +18,8 @@ namespace dataAccess
         public DbSet<group> groups { set; get; }
         public DbSet<personPhone> phopersonPhones { set; get; }
         public DbSet<personDetail> personDetails { set; get; }
+        public DbSet<Login> logins { set; get; }
+        
+        
     }
 }

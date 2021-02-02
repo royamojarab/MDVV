@@ -40,17 +40,3 @@ C:\Users\Roya\Desktop\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csproj.CoreComp
 C:\Users\Roya\Desktop\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csproj.CopyComplete
 C:\Users\Roya\Desktop\ManaDigitalV\dataLogic\obj\Debug\dataLogic.dll
 C:\Users\Roya\Desktop\ManaDigitalV\dataLogic\obj\Debug\dataLogic.pdb
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\dataLogic.dll
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\dataLogic.pdb
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\BusinessEntity.dll
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\dataAccess.dll
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\EntityFramework.dll
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\BusinessEntity.pdb
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\dataAccess.pdb
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\dataAccess.dll.config
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\EntityFramework.xml
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csprojAssemblyReference.cache
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csproj.CoreCompileInputs.cache
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csproj.CopyComplete
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.dll
-C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.pdb
