@@ -29,10 +29,12 @@ namespace ManaDigitalV.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchUserControl));
             this.Searchlabel = new System.Windows.Forms.Label();
             this.SearchbunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SearchlistBox = new System.Windows.Forms.ListBox();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CVSaverbutton = new System.Windows.Forms.Button();
             this.CVChoosebutton = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -49,7 +51,12 @@ namespace ManaDigitalV.UserControls
             this.Relationlabel = new System.Windows.Forms.Label();
             this.Namelabel = new System.Windows.Forms.Label();
             this.savebutton = new System.Windows.Forms.Button();
+            this.manaDigitalDataSet = new ManaDigitalV.ManaDigitalDataSet();
+            this.manaDigitalDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manaDigitalDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manaDigitalDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Searchlabel
@@ -69,7 +76,7 @@ namespace ManaDigitalV.UserControls
             this.SearchbunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.SearchbunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SearchbunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.SearchbunifuMaterialTextbox1.ForeColor = System.Drawing.Color.Silver;
+            this.SearchbunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SearchbunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Silver;
             this.SearchbunifuMaterialTextbox1.HintText = "";
             this.SearchbunifuMaterialTextbox1.isPassword = false;
@@ -84,11 +91,15 @@ namespace ManaDigitalV.UserControls
             this.SearchbunifuMaterialTextbox1.Size = new System.Drawing.Size(141, 33);
             this.SearchbunifuMaterialTextbox1.TabIndex = 1;
             this.SearchbunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.SearchbunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.SearchbunifuMaterialTextbox1_OnValueChanged);
             // 
             // SearchlistBox
             // 
             this.SearchlistBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.SearchlistBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SearchlistBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.personBindingSource, "Id", true));
+            this.SearchlistBox.DataSource = this.personBindingSource;
+            this.SearchlistBox.DisplayMember = "fullName";
             this.SearchlistBox.ForeColor = System.Drawing.Color.Silver;
             this.SearchlistBox.FormattingEnabled = true;
             this.SearchlistBox.Location = new System.Drawing.Point(428, 167);
@@ -96,6 +107,12 @@ namespace ManaDigitalV.UserControls
             this.SearchlistBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.SearchlistBox.Size = new System.Drawing.Size(141, 171);
             this.SearchlistBox.TabIndex = 2;
+            this.SearchlistBox.ValueMember = "Id";
+            this.SearchlistBox.SelectedIndexChanged += new System.EventHandler(this.SearchlistBox_SelectedIndexChanged);
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(BusinessEntity.person);
             // 
             // CVSaverbutton
             // 
@@ -146,7 +163,7 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox4.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox4.HintText = "";
             this.bunifuMaterialTextbox4.isPassword = false;
@@ -169,7 +186,7 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox3.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox3.HintText = "";
             this.bunifuMaterialTextbox3.isPassword = false;
@@ -192,7 +209,7 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox2.HintText = "";
             this.bunifuMaterialTextbox2.isPassword = false;
@@ -215,7 +232,7 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox1.HintText = "";
             this.bunifuMaterialTextbox1.isPassword = false;
@@ -315,6 +332,17 @@ namespace ManaDigitalV.UserControls
             this.savebutton.Size = new System.Drawing.Size(75, 23);
             this.savebutton.TabIndex = 30;
             this.savebutton.UseVisualStyleBackColor = true;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
+            // 
+            // manaDigitalDataSet
+            // 
+            this.manaDigitalDataSet.DataSetName = "ManaDigitalDataSet";
+            this.manaDigitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // manaDigitalDataSetBindingSource
+            // 
+            this.manaDigitalDataSetBindingSource.DataSource = this.manaDigitalDataSet;
+            this.manaDigitalDataSetBindingSource.Position = 0;
             // 
             // SearchUserControl
             // 
@@ -344,7 +372,10 @@ namespace ManaDigitalV.UserControls
             this.Name = "SearchUserControl";
             this.Size = new System.Drawing.Size(625, 411);
             this.Load += new System.EventHandler(this.SearchUserControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manaDigitalDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manaDigitalDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,5 +402,8 @@ namespace ManaDigitalV.UserControls
         private System.Windows.Forms.Label Relationlabel;
         private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.Button savebutton;
+        private System.Windows.Forms.BindingSource personBindingSource;
+        private ManaDigitalDataSet manaDigitalDataSet;
+        private System.Windows.Forms.BindingSource manaDigitalDataSetBindingSource;
     }
 }

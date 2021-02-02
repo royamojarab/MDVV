@@ -67,6 +67,18 @@
     <Compile Include="Forms\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FailedRegisterSubmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FailedRegisterSubmitForm.Designer.cs">
+      <DependentUpon>FailedRegisterSubmitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FailedSaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FailedSaveForm.Designer.cs">
+      <DependentUpon>FailedSaveForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FialLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +91,23 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SuccessLoginForm1.cs">
+    <Compile Include="Forms\RegisterSubmitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SuccessLoginForm1.Designer.cs">
-      <DependentUpon>SuccessLoginForm1.cs</DependentUpon>
+    <Compile Include="Forms\RegisterSubmitForm.Designer.cs">
+      <DependentUpon>RegisterSubmitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\savedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\savedForm.Designer.cs">
+      <DependentUpon>savedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SuccessLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SuccessLoginForm.Designer.cs">
+      <DependentUpon>SuccessLoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManaDigitalDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -119,14 +143,26 @@
     <EmbeddedResource Include="Forms\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FailedRegisterSubmitForm.resx">
+      <DependentUpon>FailedRegisterSubmitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FailedSaveForm.resx">
+      <DependentUpon>FailedSaveForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FialLoginForm.resx">
       <DependentUpon>FialLoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SuccessLoginForm1.resx">
-      <DependentUpon>SuccessLoginForm1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RegisterSubmitForm.resx">
+      <DependentUpon>RegisterSubmitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\savedForm.resx">
+      <DependentUpon>savedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SuccessLoginForm.resx">
+      <DependentUpon>SuccessLoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +197,7 @@
       <DependentUpon>ManaDigitalDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BusinessEntity.person.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -174,7 +211,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntity\BusinessEntity.csproj">
+      <Project>{82d3f78a-e370-4935-8206-4382115b1bff}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dataAccess\dataAccess.csproj">
+      <Project>{a383e5eb-5c0f-4ece-9ae8-a649037ffc72}</Project>
+      <Name>dataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dataLogic\dataLogic.csproj">
+      <Project>{3194c7f2-52c5-478d-a07b-86b41c5f84ea}</Project>
+      <Name>dataLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -66,7 +66,7 @@ namespace ManaDigitalV.UserControls
             this.GroupNamebunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.GroupNamebunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.GroupNamebunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.GroupNamebunifuMaterialTextbox1.ForeColor = System.Drawing.Color.Silver;
+            this.GroupNamebunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.GroupNamebunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
             this.GroupNamebunifuMaterialTextbox1.HintText = "";
             this.GroupNamebunifuMaterialTextbox1.isPassword = false;

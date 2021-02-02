@@ -29,20 +29,9 @@ namespace ManaDigitalV.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.Returnbutton = new System.Windows.Forms.Button();
             this.Faillabel = new System.Windows.Forms.Label();
+            this.Returnbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Returnbutton
-            // 
-            this.Returnbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.Returnbutton.Location = new System.Drawing.Point(40, 52);
-            this.Returnbutton.Name = "Returnbutton";
-            this.Returnbutton.Size = new System.Drawing.Size(54, 20);
-            this.Returnbutton.TabIndex = 3;
-            this.Returnbutton.Text = "بازگشت";
-            this.Returnbutton.UseVisualStyleBackColor = true;
-            this.Returnbutton.Click += new System.EventHandler(this.Returnbutton_Click);
             // 
             // Faillabel
             // 
@@ -55,6 +44,17 @@ namespace ManaDigitalV.Forms
             this.Faillabel.Text = "اطلاعات شما اشتباه است";
             this.Faillabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // Returnbutton
+            // 
+            this.Returnbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.Returnbutton.Location = new System.Drawing.Point(40, 52);
+            this.Returnbutton.Name = "Returnbutton";
+            this.Returnbutton.Size = new System.Drawing.Size(54, 20);
+            this.Returnbutton.TabIndex = 3;
+            this.Returnbutton.Text = "بازگشت";
+            this.Returnbutton.UseVisualStyleBackColor = true;
+            this.Returnbutton.Click += new System.EventHandler(this.Returnbutton_Click);
+            // 
             // FialLoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -65,15 +65,16 @@ namespace ManaDigitalV.Forms
             this.Controls.Add(this.Faillabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FialLoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FialLoginForm";
+            this.Load += new System.EventHandler(this.FialLoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Returnbutton;
         private System.Windows.Forms.Label Faillabel;
+        private System.Windows.Forms.Button Returnbutton;
     }
 }

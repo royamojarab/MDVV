@@ -23,5 +23,10 @@ namespace ManaDigitalV.Forms
             this.Hide();
 
         }
+
+        private void FialLoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

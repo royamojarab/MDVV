@@ -37,17 +37,18 @@ namespace ManaDigitalV.UserControls
             this.Grouplabel = new System.Windows.Forms.Label();
             this.CVUploaderlabel = new System.Windows.Forms.Label();
             this.Phonelabel = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.NamebunifuMaterialTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.RelationbunifuMaterialTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PhonebunifuMaterialTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AddressbunifuMaterialTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AgenumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.GroupcomboBox = new System.Windows.Forms.ComboBox();
             this.CVChoosebutton = new System.Windows.Forms.Button();
             this.CVSaverbutton = new System.Windows.Forms.Button();
             this.savebutton = new System.Windows.Forms.Button();
             this.cancelbutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.AgenumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // Namelabel
@@ -124,116 +125,116 @@ namespace ManaDigitalV.UserControls
             this.Phonelabel.TabIndex = 2;
             this.Phonelabel.Text = "شماره تلفن";
             // 
-            // bunifuMaterialTextbox1
+            // NamebunifuMaterialTextbox
             // 
-            this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(356, 88);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.MaxLength = 32767;
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox1.TabIndex = 7;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NamebunifuMaterialTextbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.NamebunifuMaterialTextbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.NamebunifuMaterialTextbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.NamebunifuMaterialTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NamebunifuMaterialTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.NamebunifuMaterialTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.NamebunifuMaterialTextbox.HintForeColor = System.Drawing.Color.Silver;
+            this.NamebunifuMaterialTextbox.HintText = "";
+            this.NamebunifuMaterialTextbox.isPassword = false;
+            this.NamebunifuMaterialTextbox.LineFocusedColor = System.Drawing.Color.Silver;
+            this.NamebunifuMaterialTextbox.LineIdleColor = System.Drawing.Color.Gray;
+            this.NamebunifuMaterialTextbox.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.NamebunifuMaterialTextbox.LineThickness = 3;
+            this.NamebunifuMaterialTextbox.Location = new System.Drawing.Point(356, 88);
+            this.NamebunifuMaterialTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.NamebunifuMaterialTextbox.MaxLength = 32767;
+            this.NamebunifuMaterialTextbox.Name = "NamebunifuMaterialTextbox";
+            this.NamebunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
+            this.NamebunifuMaterialTextbox.TabIndex = 7;
+            this.NamebunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox2
+            // RelationbunifuMaterialTextbox
             // 
-            this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(356, 166);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.MaxLength = 32767;
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox2.TabIndex = 8;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RelationbunifuMaterialTextbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.RelationbunifuMaterialTextbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.RelationbunifuMaterialTextbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.RelationbunifuMaterialTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RelationbunifuMaterialTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.RelationbunifuMaterialTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.RelationbunifuMaterialTextbox.HintForeColor = System.Drawing.Color.Silver;
+            this.RelationbunifuMaterialTextbox.HintText = "";
+            this.RelationbunifuMaterialTextbox.isPassword = false;
+            this.RelationbunifuMaterialTextbox.LineFocusedColor = System.Drawing.Color.Silver;
+            this.RelationbunifuMaterialTextbox.LineIdleColor = System.Drawing.Color.Gray;
+            this.RelationbunifuMaterialTextbox.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.RelationbunifuMaterialTextbox.LineThickness = 3;
+            this.RelationbunifuMaterialTextbox.Location = new System.Drawing.Point(356, 166);
+            this.RelationbunifuMaterialTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.RelationbunifuMaterialTextbox.MaxLength = 32767;
+            this.RelationbunifuMaterialTextbox.Name = "RelationbunifuMaterialTextbox";
+            this.RelationbunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
+            this.RelationbunifuMaterialTextbox.TabIndex = 8;
+            this.RelationbunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox3
+            // PhonebunifuMaterialTextbox
             // 
-            this.bunifuMaterialTextbox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox3.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(356, 244);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.MaxLength = 32767;
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox3.TabIndex = 9;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PhonebunifuMaterialTextbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.PhonebunifuMaterialTextbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.PhonebunifuMaterialTextbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.PhonebunifuMaterialTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhonebunifuMaterialTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.PhonebunifuMaterialTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PhonebunifuMaterialTextbox.HintForeColor = System.Drawing.Color.Silver;
+            this.PhonebunifuMaterialTextbox.HintText = "";
+            this.PhonebunifuMaterialTextbox.isPassword = false;
+            this.PhonebunifuMaterialTextbox.LineFocusedColor = System.Drawing.Color.Silver;
+            this.PhonebunifuMaterialTextbox.LineIdleColor = System.Drawing.Color.Gray;
+            this.PhonebunifuMaterialTextbox.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.PhonebunifuMaterialTextbox.LineThickness = 3;
+            this.PhonebunifuMaterialTextbox.Location = new System.Drawing.Point(356, 244);
+            this.PhonebunifuMaterialTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.PhonebunifuMaterialTextbox.MaxLength = 32767;
+            this.PhonebunifuMaterialTextbox.Name = "PhonebunifuMaterialTextbox";
+            this.PhonebunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
+            this.PhonebunifuMaterialTextbox.TabIndex = 9;
+            this.PhonebunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox4
+            // AddressbunifuMaterialTextbox
             // 
-            this.bunifuMaterialTextbox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox4.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(356, 322);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.MaxLength = 32767;
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox4.TabIndex = 10;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AddressbunifuMaterialTextbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.AddressbunifuMaterialTextbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.AddressbunifuMaterialTextbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.AddressbunifuMaterialTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddressbunifuMaterialTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.AddressbunifuMaterialTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.AddressbunifuMaterialTextbox.HintForeColor = System.Drawing.Color.Silver;
+            this.AddressbunifuMaterialTextbox.HintText = "";
+            this.AddressbunifuMaterialTextbox.isPassword = false;
+            this.AddressbunifuMaterialTextbox.LineFocusedColor = System.Drawing.Color.Silver;
+            this.AddressbunifuMaterialTextbox.LineIdleColor = System.Drawing.Color.Gray;
+            this.AddressbunifuMaterialTextbox.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.AddressbunifuMaterialTextbox.LineThickness = 3;
+            this.AddressbunifuMaterialTextbox.Location = new System.Drawing.Point(356, 322);
+            this.AddressbunifuMaterialTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.AddressbunifuMaterialTextbox.MaxLength = 32767;
+            this.AddressbunifuMaterialTextbox.Name = "AddressbunifuMaterialTextbox";
+            this.AddressbunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
+            this.AddressbunifuMaterialTextbox.TabIndex = 10;
+            this.AddressbunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // numericUpDown1
+            // AgenumericUpDown
             // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.ForeColor = System.Drawing.Color.Silver;
-            this.numericUpDown1.Location = new System.Drawing.Point(139, 88);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(87, 20);
-            this.numericUpDown1.TabIndex = 11;
+            this.AgenumericUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.AgenumericUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AgenumericUpDown.ForeColor = System.Drawing.Color.Silver;
+            this.AgenumericUpDown.Location = new System.Drawing.Point(139, 88);
+            this.AgenumericUpDown.Name = "AgenumericUpDown";
+            this.AgenumericUpDown.Size = new System.Drawing.Size(87, 20);
+            this.AgenumericUpDown.TabIndex = 11;
             // 
-            // comboBox1
+            // GroupcomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(139, 166);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(87, 21);
-            this.comboBox1.TabIndex = 12;
+            this.GroupcomboBox.FormattingEnabled = true;
+            this.GroupcomboBox.Location = new System.Drawing.Point(139, 166);
+            this.GroupcomboBox.Name = "GroupcomboBox";
+            this.GroupcomboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.GroupcomboBox.Size = new System.Drawing.Size(87, 21);
+            this.GroupcomboBox.TabIndex = 12;
             // 
             // CVChoosebutton
             // 
@@ -245,6 +246,7 @@ namespace ManaDigitalV.UserControls
             this.CVChoosebutton.TabIndex = 13;
             this.CVChoosebutton.Text = "انتخاب فایل";
             this.CVChoosebutton.UseVisualStyleBackColor = true;
+            this.CVChoosebutton.Click += new System.EventHandler(this.CVChoosebutton_Click);
             // 
             // CVSaverbutton
             // 
@@ -257,6 +259,7 @@ namespace ManaDigitalV.UserControls
             this.CVSaverbutton.TabIndex = 14;
             this.CVSaverbutton.Text = "ذخیره";
             this.CVSaverbutton.UseVisualStyleBackColor = true;
+            this.CVSaverbutton.Click += new System.EventHandler(this.CVSaverbutton_Click);
             // 
             // savebutton
             // 
@@ -269,6 +272,7 @@ namespace ManaDigitalV.UserControls
             this.savebutton.Size = new System.Drawing.Size(75, 23);
             this.savebutton.TabIndex = 15;
             this.savebutton.UseVisualStyleBackColor = true;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
             // 
             // cancelbutton
             // 
@@ -282,6 +286,10 @@ namespace ManaDigitalV.UserControls
             this.cancelbutton.TabIndex = 16;
             this.cancelbutton.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // RegisterUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,12 +299,12 @@ namespace ManaDigitalV.UserControls
             this.Controls.Add(this.savebutton);
             this.Controls.Add(this.CVSaverbutton);
             this.Controls.Add(this.CVChoosebutton);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.bunifuMaterialTextbox4);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.GroupcomboBox);
+            this.Controls.Add(this.AgenumericUpDown);
+            this.Controls.Add(this.AddressbunifuMaterialTextbox);
+            this.Controls.Add(this.PhonebunifuMaterialTextbox);
+            this.Controls.Add(this.RelationbunifuMaterialTextbox);
+            this.Controls.Add(this.NamebunifuMaterialTextbox);
             this.Controls.Add(this.CVUploaderlabel);
             this.Controls.Add(this.Grouplabel);
             this.Controls.Add(this.Agelabel);
@@ -306,7 +314,8 @@ namespace ManaDigitalV.UserControls
             this.Controls.Add(this.Namelabel);
             this.Name = "RegisterUserControl";
             this.Size = new System.Drawing.Size(625, 411);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Load += new System.EventHandler(this.RegisterUserControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.AgenumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,15 +330,16 @@ namespace ManaDigitalV.UserControls
         private System.Windows.Forms.Label Grouplabel;
         private System.Windows.Forms.Label CVUploaderlabel;
         private System.Windows.Forms.Label Phonelabel;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button CVChoosebutton;
-        private System.Windows.Forms.Button CVSaverbutton;
         private System.Windows.Forms.Button savebutton;
         private System.Windows.Forms.Button cancelbutton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox NamebunifuMaterialTextbox;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox RelationbunifuMaterialTextbox;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox PhonebunifuMaterialTextbox;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox AddressbunifuMaterialTextbox;
+        public System.Windows.Forms.NumericUpDown AgenumericUpDown;
+        public System.Windows.Forms.ComboBox GroupcomboBox;
+        public System.Windows.Forms.Button CVSaverbutton;
     }
 }
