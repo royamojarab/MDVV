@@ -19,6 +19,8 @@ C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Form
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.FailedRegisterSubmitForm.resources
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.FailedSaveForm.resources
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.FialLoginForm.resources
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.GroupFailedForm.resources
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.GroupSuccessForm.resources
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.LoginForm.resources
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.RegisterSubmitForm.resources
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.savedForm.resources
@@ -33,3 +35,6 @@ C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.cspr
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.csproj.CopyComplete
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.exe
 C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.pdb
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.EditSuccessForm.resources
+C:\Users\roya\source\repos\ManaDigitalV\ManaDigitalV\obj\Debug\ManaDigitalV.Forms.EditFailedForm.resources

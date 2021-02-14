@@ -8,11 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessEntity;
+using dataAccess;
 
 namespace ManaDigitalV.UserControls
 {
     public partial class GroupListsUserControl : UserControl
     {
+        List<group> g100 = new List<group>();
+        group selectedGroup = new group();
+        List<person> selectedGroupPersons = new List<person>();
+
+
         public GroupListsUserControl()
         {
             InitializeComponent();
@@ -20,9 +27,47 @@ namespace ManaDigitalV.UserControls
 
         private void GroupBackbutton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            
+            //this.Hide();
+            MakeGroupUserControl mgcc = new MakeGroupUserControl();
 
+            ((DashboardForm)Application.OpenForms["DashboardForm"]).master.Controls.Clear();
+            ((DashboardForm)Application.OpenForms["DashboardForm"]).master.Controls.Add(mgcc);
+
+
+
+        }
+
+        private void GroupListsUserControl_Load(object sender, EventArgs e)
+        {
+            //List<group> pList = new List<group>();
+            //phbContext db = new phbContext();
+            //pList = db.groups.ToList();
+            //GroupNamelistBox.DataSource = pList;
+
+           
+
+        }
+
+        private void GroupNamelistBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupNamelistBox_Click(object sender, EventArgs e)
+        {
+            selectedGroup = (group)GroupNamelistBox.SelectedItem;
+            List<int> ids = selectedGroup.persons.Split(',').Select(s => Convert.ToInt32(s)).ToList();
+            phbContext db1 = new phbContext();
+            selectedGroupPersons = db1.persons.Where(w => ids.Contains(w.Id)).ToList();
+            MemberslistBox.DataSource = selectedGroupPersons;
+        }
+
+        private void Refreshbutton_Click(object sender, EventArgs e)
+        {
+            List<group> pList = new List<group>();
+            phbContext db = new phbContext();
+            pList = db.groups.ToList();
+            GroupNamelistBox.DataSource = pList;
         }
     }
 }

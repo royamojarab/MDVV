@@ -9,11 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ManaDigitalV.Forms
 {
     public partial class DashboardForm : Form
     {
         public Panel master;
+      
     
         public DashboardForm()
         {
@@ -40,7 +42,6 @@ namespace ManaDigitalV.Forms
             Motherpanel.Controls.Clear();
             Motherpanel.Controls.Add(suc);
 
-
         }
 
         private void Groupsbutton_Click(object sender, EventArgs e)
@@ -53,13 +54,39 @@ namespace ManaDigitalV.Forms
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
-            
+             
+
             Motherpanel.Controls.Clear();
             Motherpanel.Controls.Add(ruc1);
             master = Motherpanel;
         }
 
         private void Motherpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Maximizebutton_Click(object sender, EventArgs e)
+        {
+            
+            if (this.Width == 825)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else {
+               this.WindowState = FormWindowState.Normal; }
+        }
+
+        private void Minimizebutton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void Closebutton_Click(object sender, EventArgs e)
+        {
+            Close();        }
+
+        private void Maximizebutton_Click_1(object sender, EventArgs e)
         {
 
         }

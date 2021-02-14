@@ -38,7 +38,8 @@ namespace ManaDigitalV
             this.UserbunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.PassbunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Loginbutton1 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Minimizebutton = new System.Windows.Forms.Button();
+            this.Closebutton = new System.Windows.Forms.Button();
             this.Logopanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +110,7 @@ namespace ManaDigitalV
             this.UserbunifuMaterialTextbox1.MaxLength = 32767;
             this.UserbunifuMaterialTextbox1.Name = "UserbunifuMaterialTextbox1";
             this.UserbunifuMaterialTextbox1.Size = new System.Drawing.Size(211, 33);
-            this.UserbunifuMaterialTextbox1.TabIndex = 3;
+            this.UserbunifuMaterialTextbox1.TabIndex = 1;
             this.UserbunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // PassbunifuMaterialTextbox2
@@ -132,7 +133,7 @@ namespace ManaDigitalV
             this.PassbunifuMaterialTextbox2.MaxLength = 32767;
             this.PassbunifuMaterialTextbox2.Name = "PassbunifuMaterialTextbox2";
             this.PassbunifuMaterialTextbox2.Size = new System.Drawing.Size(211, 33);
-            this.PassbunifuMaterialTextbox2.TabIndex = 4;
+            this.PassbunifuMaterialTextbox2.TabIndex = 2;
             this.PassbunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Loginbutton1
@@ -145,29 +146,47 @@ namespace ManaDigitalV
             this.Loginbutton1.Location = new System.Drawing.Point(237, 363);
             this.Loginbutton1.Name = "Loginbutton1";
             this.Loginbutton1.Size = new System.Drawing.Size(151, 31);
-            this.Loginbutton1.TabIndex = 5;
+            this.Loginbutton1.TabIndex = 3;
             this.Loginbutton1.Text = "ورود";
             this.Loginbutton1.UseVisualStyleBackColor = false;
             this.Loginbutton1.Click += new System.EventHandler(this.Loginbutton1_Click);
             // 
-            // button1
+            // Minimizebutton
             // 
-            this.button1.Location = new System.Drawing.Point(305, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Minimizebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Minimizebutton.BackgroundImage")));
+            this.Minimizebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Minimizebutton.FlatAppearance.BorderSize = 0;
+            this.Minimizebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimizebutton.Location = new System.Drawing.Point(765, 3);
+            this.Minimizebutton.Name = "Minimizebutton";
+            this.Minimizebutton.Size = new System.Drawing.Size(38, 28);
+            this.Minimizebutton.TabIndex = 5;
+            this.Minimizebutton.UseVisualStyleBackColor = true;
+            this.Minimizebutton.Click += new System.EventHandler(this.Minimizebutton_Click);
+            // 
+            // Closebutton
+            // 
+            this.Closebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Closebutton.BackgroundImage")));
+            this.Closebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Closebutton.FlatAppearance.BorderSize = 0;
+            this.Closebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Closebutton.Location = new System.Drawing.Point(803, 3);
+            this.Closebutton.Name = "Closebutton";
+            this.Closebutton.Size = new System.Drawing.Size(38, 28);
+            this.Closebutton.TabIndex = 4;
+            this.Closebutton.UseVisualStyleBackColor = true;
+            this.Closebutton.Click += new System.EventHandler(this.Closebutton_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(841, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Minimizebutton);
+            this.Controls.Add(this.Closebutton);
             this.Controls.Add(this.Loginbutton1);
             this.Controls.Add(this.PassbunifuMaterialTextbox2);
             this.Controls.Add(this.UserbunifuMaterialTextbox1);
@@ -175,6 +194,7 @@ namespace ManaDigitalV
             this.Controls.Add(this.Userlabel);
             this.Controls.Add(this.Logopanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -195,7 +215,8 @@ namespace ManaDigitalV
         private Bunifu.Framework.UI.BunifuMaterialTextbox UserbunifuMaterialTextbox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PassbunifuMaterialTextbox2;
         private System.Windows.Forms.Button Loginbutton1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Minimizebutton;
+        private System.Windows.Forms.Button Closebutton;
     }
 }
 

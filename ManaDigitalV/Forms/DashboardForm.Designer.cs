@@ -39,6 +39,8 @@ namespace ManaDigitalV.Forms
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Motherpanel = new System.Windows.Forms.Panel();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.Closebutton = new System.Windows.Forms.Button();
+            this.Minimizebutton = new System.Windows.Forms.Button();
             this.Dashboardpanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,15 +51,15 @@ namespace ManaDigitalV.Forms
             this.Dashboardpanel.Controls.Add(this.Searchbutton);
             this.Dashboardpanel.Controls.Add(this.Registerbutton);
             this.Dashboardpanel.Controls.Add(this.panel1);
-            this.Dashboardpanel.Location = new System.Drawing.Point(2, 1);
+            this.Dashboardpanel.Location = new System.Drawing.Point(0, 2);
             this.Dashboardpanel.Name = "Dashboardpanel";
-            this.Dashboardpanel.Size = new System.Drawing.Size(179, 391);
+            this.Dashboardpanel.Size = new System.Drawing.Size(179, 455);
             this.Dashboardpanel.TabIndex = 0;
             // 
             // Sliderpanel
             // 
             this.Sliderpanel.BackColor = System.Drawing.Color.Yellow;
-            this.Sliderpanel.Location = new System.Drawing.Point(166, 118);
+            this.Sliderpanel.Location = new System.Drawing.Point(166, 183);
             this.Sliderpanel.Name = "Sliderpanel";
             this.Sliderpanel.Size = new System.Drawing.Size(10, 46);
             this.Sliderpanel.TabIndex = 1;
@@ -69,7 +71,7 @@ namespace ManaDigitalV.Forms
             this.Groupsbutton.FlatAppearance.BorderSize = 0;
             this.Groupsbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Groupsbutton.ForeColor = System.Drawing.Color.Silver;
-            this.Groupsbutton.Location = new System.Drawing.Point(3, 223);
+            this.Groupsbutton.Location = new System.Drawing.Point(-3, 288);
             this.Groupsbutton.Name = "Groupsbutton";
             this.Groupsbutton.Size = new System.Drawing.Size(179, 40);
             this.Groupsbutton.TabIndex = 3;
@@ -85,7 +87,7 @@ namespace ManaDigitalV.Forms
             this.Searchbutton.FlatAppearance.BorderSize = 0;
             this.Searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Searchbutton.ForeColor = System.Drawing.Color.Silver;
-            this.Searchbutton.Location = new System.Drawing.Point(-3, 170);
+            this.Searchbutton.Location = new System.Drawing.Point(-3, 235);
             this.Searchbutton.Name = "Searchbutton";
             this.Searchbutton.Size = new System.Drawing.Size(179, 40);
             this.Searchbutton.TabIndex = 2;
@@ -101,7 +103,7 @@ namespace ManaDigitalV.Forms
             this.Registerbutton.FlatAppearance.BorderSize = 0;
             this.Registerbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Registerbutton.ForeColor = System.Drawing.Color.Silver;
-            this.Registerbutton.Location = new System.Drawing.Point(0, 117);
+            this.Registerbutton.Location = new System.Drawing.Point(-3, 182);
             this.Registerbutton.Name = "Registerbutton";
             this.Registerbutton.Size = new System.Drawing.Size(179, 40);
             this.Registerbutton.TabIndex = 1;
@@ -116,29 +118,62 @@ namespace ManaDigitalV.Forms
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 84);
+            this.panel1.Size = new System.Drawing.Size(179, 143);
             this.panel1.TabIndex = 1;
             // 
             // Motherpanel
             // 
-            this.Motherpanel.Location = new System.Drawing.Point(200, 1);
+            this.Motherpanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Motherpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Motherpanel.Location = new System.Drawing.Point(198, 57);
             this.Motherpanel.Name = "Motherpanel";
-            this.Motherpanel.Size = new System.Drawing.Size(625, 411);
-            this.Motherpanel.TabIndex = 1;
+            this.Motherpanel.Size = new System.Drawing.Size(625, 400);
+            this.Motherpanel.TabIndex = 4;
             this.Motherpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Motherpanel_Paint);
+            // 
+            // Closebutton
+            // 
+            this.Closebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Closebutton.BackgroundImage")));
+            this.Closebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Closebutton.FlatAppearance.BorderSize = 0;
+            this.Closebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Closebutton.Location = new System.Drawing.Point(787, 2);
+            this.Closebutton.Name = "Closebutton";
+            this.Closebutton.Size = new System.Drawing.Size(38, 28);
+            this.Closebutton.TabIndex = 5;
+            this.Closebutton.UseVisualStyleBackColor = true;
+            this.Closebutton.Click += new System.EventHandler(this.Closebutton_Click);
+            // 
+            // Minimizebutton
+            // 
+            this.Minimizebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Minimizebutton.BackgroundImage")));
+            this.Minimizebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Minimizebutton.FlatAppearance.BorderSize = 0;
+            this.Minimizebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimizebutton.Location = new System.Drawing.Point(749, 2);
+            this.Minimizebutton.Name = "Minimizebutton";
+            this.Minimizebutton.Size = new System.Drawing.Size(38, 28);
+            this.Minimizebutton.TabIndex = 6;
+            this.Minimizebutton.UseVisualStyleBackColor = true;
+            this.Minimizebutton.Click += new System.EventHandler(this.Minimizebutton_Click);
             // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(825, 411);
+            this.ClientSize = new System.Drawing.Size(825, 460);
+            this.Controls.Add(this.Minimizebutton);
+            this.Controls.Add(this.Closebutton);
             this.Controls.Add(this.Motherpanel);
             this.Controls.Add(this.Dashboardpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DashboardForm";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.Dashboardpanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -156,5 +191,7 @@ namespace ManaDigitalV.Forms
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel Motherpanel;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Button Closebutton;
+        private System.Windows.Forms.Button Minimizebutton;
     }
 }

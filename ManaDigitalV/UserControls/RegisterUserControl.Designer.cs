@@ -145,7 +145,7 @@ namespace ManaDigitalV.UserControls
             this.NamebunifuMaterialTextbox.MaxLength = 32767;
             this.NamebunifuMaterialTextbox.Name = "NamebunifuMaterialTextbox";
             this.NamebunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
-            this.NamebunifuMaterialTextbox.TabIndex = 7;
+            this.NamebunifuMaterialTextbox.TabIndex = 1;
             this.NamebunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // RelationbunifuMaterialTextbox
@@ -168,7 +168,7 @@ namespace ManaDigitalV.UserControls
             this.RelationbunifuMaterialTextbox.MaxLength = 32767;
             this.RelationbunifuMaterialTextbox.Name = "RelationbunifuMaterialTextbox";
             this.RelationbunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
-            this.RelationbunifuMaterialTextbox.TabIndex = 8;
+            this.RelationbunifuMaterialTextbox.TabIndex = 2;
             this.RelationbunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // PhonebunifuMaterialTextbox
@@ -191,7 +191,7 @@ namespace ManaDigitalV.UserControls
             this.PhonebunifuMaterialTextbox.MaxLength = 32767;
             this.PhonebunifuMaterialTextbox.Name = "PhonebunifuMaterialTextbox";
             this.PhonebunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
-            this.PhonebunifuMaterialTextbox.TabIndex = 9;
+            this.PhonebunifuMaterialTextbox.TabIndex = 3;
             this.PhonebunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // AddressbunifuMaterialTextbox
@@ -214,7 +214,7 @@ namespace ManaDigitalV.UserControls
             this.AddressbunifuMaterialTextbox.MaxLength = 32767;
             this.AddressbunifuMaterialTextbox.Name = "AddressbunifuMaterialTextbox";
             this.AddressbunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
-            this.AddressbunifuMaterialTextbox.TabIndex = 10;
+            this.AddressbunifuMaterialTextbox.TabIndex = 4;
             this.AddressbunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // AgenumericUpDown
@@ -225,16 +225,29 @@ namespace ManaDigitalV.UserControls
             this.AgenumericUpDown.Location = new System.Drawing.Point(139, 88);
             this.AgenumericUpDown.Name = "AgenumericUpDown";
             this.AgenumericUpDown.Size = new System.Drawing.Size(87, 20);
-            this.AgenumericUpDown.TabIndex = 11;
+            this.AgenumericUpDown.TabIndex = 5;
             // 
             // GroupcomboBox
             // 
+            this.GroupcomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.GroupcomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GroupcomboBox.ForeColor = System.Drawing.Color.Silver;
             this.GroupcomboBox.FormattingEnabled = true;
+            this.GroupcomboBox.Items.AddRange(new object[] {
+            " اداری و مالی",
+            "امور انبار",
+            "اداره کارگزینی و رفاه کارکنان",
+            "دبیر خانه ",
+            "واحد تدارکات ",
+            "واحد خرید ",
+            "واحد ترابری",
+            "حراست",
+            "پشتیبانی"});
             this.GroupcomboBox.Location = new System.Drawing.Point(139, 166);
             this.GroupcomboBox.Name = "GroupcomboBox";
             this.GroupcomboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.GroupcomboBox.Size = new System.Drawing.Size(87, 21);
-            this.GroupcomboBox.TabIndex = 12;
+            this.GroupcomboBox.TabIndex = 6;
             // 
             // CVChoosebutton
             // 
@@ -243,7 +256,7 @@ namespace ManaDigitalV.UserControls
             this.CVChoosebutton.Location = new System.Drawing.Point(139, 244);
             this.CVChoosebutton.Name = "CVChoosebutton";
             this.CVChoosebutton.Size = new System.Drawing.Size(87, 23);
-            this.CVChoosebutton.TabIndex = 13;
+            this.CVChoosebutton.TabIndex = 7;
             this.CVChoosebutton.Text = "انتخاب فایل";
             this.CVChoosebutton.UseVisualStyleBackColor = true;
             this.CVChoosebutton.Click += new System.EventHandler(this.CVChoosebutton_Click);
@@ -256,7 +269,7 @@ namespace ManaDigitalV.UserControls
             this.CVSaverbutton.Location = new System.Drawing.Point(139, 273);
             this.CVSaverbutton.Name = "CVSaverbutton";
             this.CVSaverbutton.Size = new System.Drawing.Size(87, 23);
-            this.CVSaverbutton.TabIndex = 14;
+            this.CVSaverbutton.TabIndex = 8;
             this.CVSaverbutton.Text = "ذخیره";
             this.CVSaverbutton.UseVisualStyleBackColor = true;
             this.CVSaverbutton.Click += new System.EventHandler(this.CVSaverbutton_Click);
@@ -270,7 +283,7 @@ namespace ManaDigitalV.UserControls
             this.savebutton.Location = new System.Drawing.Point(417, 375);
             this.savebutton.Name = "savebutton";
             this.savebutton.Size = new System.Drawing.Size(75, 23);
-            this.savebutton.TabIndex = 15;
+            this.savebutton.TabIndex = 9;
             this.savebutton.UseVisualStyleBackColor = true;
             this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
             // 
@@ -283,7 +296,7 @@ namespace ManaDigitalV.UserControls
             this.cancelbutton.Location = new System.Drawing.Point(151, 375);
             this.cancelbutton.Name = "cancelbutton";
             this.cancelbutton.Size = new System.Drawing.Size(75, 23);
-            this.cancelbutton.TabIndex = 16;
+            this.cancelbutton.TabIndex = 10;
             this.cancelbutton.UseVisualStyleBackColor = true;
             // 
             // openFileDialog1

@@ -50,7 +50,7 @@ namespace ManaDigitalV.Forms
             this.Nextbutton.Location = new System.Drawing.Point(46, 52);
             this.Nextbutton.Name = "Nextbutton";
             this.Nextbutton.Size = new System.Drawing.Size(40, 20);
-            this.Nextbutton.TabIndex = 4;
+            this.Nextbutton.TabIndex = 1;
             this.Nextbutton.Text = "ادامه ";
             this.Nextbutton.UseVisualStyleBackColor = true;
             this.Nextbutton.Click += new System.EventHandler(this.Nextbutton_Click);

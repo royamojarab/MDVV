@@ -63,7 +63,7 @@ namespace ManaDigitalV.Forms
             this.Returnbutton.Location = new System.Drawing.Point(31, 52);
             this.Returnbutton.Name = "Returnbutton";
             this.Returnbutton.Size = new System.Drawing.Size(73, 20);
-            this.Returnbutton.TabIndex = 4;
+            this.Returnbutton.TabIndex = 1;
             this.Returnbutton.Text = "بازگشت";
             this.Returnbutton.UseVisualStyleBackColor = true;
             // 
@@ -78,6 +78,7 @@ namespace ManaDigitalV.Forms
             this.Controls.Add(this.FailedSavelabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FailedSaveForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FailedSaveForm";
             this.ResumeLayout(false);
             this.PerformLayout();

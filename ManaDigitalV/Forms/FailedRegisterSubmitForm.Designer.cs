@@ -48,9 +48,10 @@ namespace ManaDigitalV.Forms
             this.Returnbutton.Location = new System.Drawing.Point(31, 52);
             this.Returnbutton.Name = "Returnbutton";
             this.Returnbutton.Size = new System.Drawing.Size(73, 20);
-            this.Returnbutton.TabIndex = 3;
+            this.Returnbutton.TabIndex = 1;
             this.Returnbutton.Text = "بازگشت";
             this.Returnbutton.UseVisualStyleBackColor = true;
+            this.Returnbutton.Click += new System.EventHandler(this.Returnbutton_Click);
             // 
             // FailedRegisterSubmitForm
             // 

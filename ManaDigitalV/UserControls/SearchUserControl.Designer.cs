@@ -53,6 +53,8 @@ namespace ManaDigitalV.UserControls
             this.savebutton = new System.Windows.Forms.Button();
             this.manaDigitalDataSet = new ManaDigitalV.ManaDigitalDataSet();
             this.manaDigitalDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Refreshbutton = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manaDigitalDataSet)).BeginInit();
@@ -61,6 +63,7 @@ namespace ManaDigitalV.UserControls
             // 
             // Searchlabel
             // 
+            this.Searchlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Searchlabel.AutoSize = true;
             this.Searchlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Searchlabel.Location = new System.Drawing.Point(543, 58);
@@ -71,6 +74,7 @@ namespace ManaDigitalV.UserControls
             // 
             // SearchbunifuMaterialTextbox1
             // 
+            this.SearchbunifuMaterialTextbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SearchbunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.SearchbunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.SearchbunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -95,6 +99,7 @@ namespace ManaDigitalV.UserControls
             // 
             // SearchlistBox
             // 
+            this.SearchlistBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SearchlistBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.SearchlistBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SearchlistBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.personBindingSource, "Id", true));
@@ -108,6 +113,7 @@ namespace ManaDigitalV.UserControls
             this.SearchlistBox.Size = new System.Drawing.Size(141, 171);
             this.SearchlistBox.TabIndex = 2;
             this.SearchlistBox.ValueMember = "Id";
+            this.SearchlistBox.Click += new System.EventHandler(this.SearchlistBox_Click);
             this.SearchlistBox.SelectedIndexChanged += new System.EventHandler(this.SearchlistBox_SelectedIndexChanged);
             // 
             // personBindingSource
@@ -116,48 +122,58 @@ namespace ManaDigitalV.UserControls
             // 
             // CVSaverbutton
             // 
+            this.CVSaverbutton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CVSaverbutton.FlatAppearance.BorderSize = 0;
             this.CVSaverbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CVSaverbutton.ForeColor = System.Drawing.Color.Silver;
-            this.CVSaverbutton.Location = new System.Drawing.Point(235, 366);
+            this.CVSaverbutton.Location = new System.Drawing.Point(191, 366);
             this.CVSaverbutton.Name = "CVSaverbutton";
             this.CVSaverbutton.Size = new System.Drawing.Size(87, 23);
-            this.CVSaverbutton.TabIndex = 29;
+            this.CVSaverbutton.TabIndex = 10;
             this.CVSaverbutton.Text = "ذخیره";
             this.CVSaverbutton.UseVisualStyleBackColor = true;
+            this.CVSaverbutton.Click += new System.EventHandler(this.CVSaverbutton_Click);
             // 
             // CVChoosebutton
             // 
+            this.CVChoosebutton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CVChoosebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CVChoosebutton.ForeColor = System.Drawing.Color.Silver;
-            this.CVChoosebutton.Location = new System.Drawing.Point(235, 337);
+            this.CVChoosebutton.Location = new System.Drawing.Point(191, 337);
             this.CVChoosebutton.Name = "CVChoosebutton";
             this.CVChoosebutton.Size = new System.Drawing.Size(87, 23);
-            this.CVChoosebutton.TabIndex = 28;
-            this.CVChoosebutton.Text = "انتخاب فایل";
+            this.CVChoosebutton.TabIndex = 9;
+            this.CVChoosebutton.Text = "نمایش فایل";
             this.CVChoosebutton.UseVisualStyleBackColor = true;
+            this.CVChoosebutton.Click += new System.EventHandler(this.CVChoosebutton_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox1.ForeColor = System.Drawing.Color.Silver;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(235, 295);
+            this.comboBox1.Location = new System.Drawing.Point(191, 295);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox1.Size = new System.Drawing.Size(87, 21);
-            this.comboBox1.TabIndex = 27;
+            this.comboBox1.TabIndex = 8;
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown1.ForeColor = System.Drawing.Color.Silver;
-            this.numericUpDown1.Location = new System.Drawing.Point(235, 256);
+            this.numericUpDown1.Location = new System.Drawing.Point(191, 256);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(87, 20);
-            this.numericUpDown1.TabIndex = 26;
+            this.numericUpDown1.TabIndex = 7;
             // 
             // bunifuMaterialTextbox4
             // 
+            this.bunifuMaterialTextbox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuMaterialTextbox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.bunifuMaterialTextbox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.bunifuMaterialTextbox4.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -171,16 +187,17 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(152, 212);
+            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(108, 212);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox4.MaxLength = 32767;
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox4.TabIndex = 25;
+            this.bunifuMaterialTextbox4.TabIndex = 6;
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox3
             // 
+            this.bunifuMaterialTextbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuMaterialTextbox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.bunifuMaterialTextbox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.bunifuMaterialTextbox3.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -194,16 +211,17 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(152, 167);
+            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(108, 167);
             this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox3.MaxLength = 32767;
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox3.TabIndex = 24;
+            this.bunifuMaterialTextbox3.TabIndex = 5;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox2
             // 
+            this.bunifuMaterialTextbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -217,16 +235,17 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(152, 120);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(108, 120);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.MaxLength = 32767;
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox2.TabIndex = 23;
+            this.bunifuMaterialTextbox2.TabIndex = 4;
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox1
             // 
+            this.bunifuMaterialTextbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -240,19 +259,20 @@ namespace ManaDigitalV.UserControls
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(152, 75);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(108, 75);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.MaxLength = 32767;
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(170, 24);
-            this.bunifuMaterialTextbox1.TabIndex = 22;
+            this.bunifuMaterialTextbox1.TabIndex = 3;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // CVUploaderlabel
             // 
+            this.CVUploaderlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CVUploaderlabel.AutoSize = true;
             this.CVUploaderlabel.ForeColor = System.Drawing.Color.Silver;
-            this.CVUploaderlabel.Location = new System.Drawing.Point(284, 319);
+            this.CVUploaderlabel.Location = new System.Drawing.Point(240, 319);
             this.CVUploaderlabel.Name = "CVUploaderlabel";
             this.CVUploaderlabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CVUploaderlabel.Size = new System.Drawing.Size(58, 13);
@@ -261,9 +281,10 @@ namespace ManaDigitalV.UserControls
             // 
             // Grouplabel
             // 
+            this.Grouplabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Grouplabel.AutoSize = true;
             this.Grouplabel.ForeColor = System.Drawing.Color.Silver;
-            this.Grouplabel.Location = new System.Drawing.Point(311, 279);
+            this.Grouplabel.Location = new System.Drawing.Point(267, 279);
             this.Grouplabel.Name = "Grouplabel";
             this.Grouplabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Grouplabel.Size = new System.Drawing.Size(31, 13);
@@ -272,9 +293,10 @@ namespace ManaDigitalV.UserControls
             // 
             // Agelabel
             // 
+            this.Agelabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Agelabel.AutoSize = true;
             this.Agelabel.ForeColor = System.Drawing.Color.Silver;
-            this.Agelabel.Location = new System.Drawing.Point(319, 240);
+            this.Agelabel.Location = new System.Drawing.Point(275, 240);
             this.Agelabel.Name = "Agelabel";
             this.Agelabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Agelabel.Size = new System.Drawing.Size(23, 13);
@@ -283,9 +305,10 @@ namespace ManaDigitalV.UserControls
             // 
             // Addresslabel
             // 
+            this.Addresslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Addresslabel.AutoSize = true;
             this.Addresslabel.ForeColor = System.Drawing.Color.Silver;
-            this.Addresslabel.Location = new System.Drawing.Point(309, 195);
+            this.Addresslabel.Location = new System.Drawing.Point(265, 195);
             this.Addresslabel.Name = "Addresslabel";
             this.Addresslabel.Size = new System.Drawing.Size(30, 13);
             this.Addresslabel.TabIndex = 18;
@@ -293,9 +316,10 @@ namespace ManaDigitalV.UserControls
             // 
             // Phonelabel
             // 
+            this.Phonelabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Phonelabel.AutoSize = true;
             this.Phonelabel.ForeColor = System.Drawing.Color.Silver;
-            this.Phonelabel.Location = new System.Drawing.Point(281, 148);
+            this.Phonelabel.Location = new System.Drawing.Point(237, 148);
             this.Phonelabel.Name = "Phonelabel";
             this.Phonelabel.Size = new System.Drawing.Size(58, 13);
             this.Phonelabel.TabIndex = 17;
@@ -303,9 +327,10 @@ namespace ManaDigitalV.UserControls
             // 
             // Relationlabel
             // 
+            this.Relationlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Relationlabel.AutoSize = true;
             this.Relationlabel.ForeColor = System.Drawing.Color.Silver;
-            this.Relationlabel.Location = new System.Drawing.Point(274, 103);
+            this.Relationlabel.Location = new System.Drawing.Point(230, 103);
             this.Relationlabel.Name = "Relationlabel";
             this.Relationlabel.Size = new System.Drawing.Size(65, 13);
             this.Relationlabel.TabIndex = 16;
@@ -313,9 +338,10 @@ namespace ManaDigitalV.UserControls
             // 
             // Namelabel
             // 
+            this.Namelabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Namelabel.AutoSize = true;
             this.Namelabel.ForeColor = System.Drawing.Color.Silver;
-            this.Namelabel.Location = new System.Drawing.Point(245, 58);
+            this.Namelabel.Location = new System.Drawing.Point(201, 58);
             this.Namelabel.Name = "Namelabel";
             this.Namelabel.Size = new System.Drawing.Size(94, 13);
             this.Namelabel.TabIndex = 15;
@@ -330,7 +356,7 @@ namespace ManaDigitalV.UserControls
             this.savebutton.Location = new System.Drawing.Point(23, 366);
             this.savebutton.Name = "savebutton";
             this.savebutton.Size = new System.Drawing.Size(75, 23);
-            this.savebutton.TabIndex = 30;
+            this.savebutton.TabIndex = 11;
             this.savebutton.UseVisualStyleBackColor = true;
             this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
             // 
@@ -344,11 +370,26 @@ namespace ManaDigitalV.UserControls
             this.manaDigitalDataSetBindingSource.DataSource = this.manaDigitalDataSet;
             this.manaDigitalDataSetBindingSource.Position = 0;
             // 
+            // Refreshbutton
+            // 
+            this.Refreshbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Refreshbutton.BackgroundImage")));
+            this.Refreshbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Refreshbutton.FlatAppearance.BorderSize = 0;
+            this.Refreshbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Refreshbutton.Location = new System.Drawing.Point(588, 3);
+            this.Refreshbutton.Name = "Refreshbutton";
+            this.Refreshbutton.Size = new System.Drawing.Size(34, 22);
+            this.Refreshbutton.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.Refreshbutton, " نمایش کامل اطلاعات");
+            this.Refreshbutton.UseVisualStyleBackColor = true;
+            this.Refreshbutton.Click += new System.EventHandler(this.Refreshbutton_Click);
+            // 
             // SearchUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.Controls.Add(this.Refreshbutton);
             this.Controls.Add(this.savebutton);
             this.Controls.Add(this.CVSaverbutton);
             this.Controls.Add(this.CVChoosebutton);
@@ -372,6 +413,7 @@ namespace ManaDigitalV.UserControls
             this.Name = "SearchUserControl";
             this.Size = new System.Drawing.Size(625, 411);
             this.Load += new System.EventHandler(this.SearchUserControl_Load);
+            this.Enter += new System.EventHandler(this.SearchUserControl_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manaDigitalDataSet)).EndInit();
@@ -405,5 +447,7 @@ namespace ManaDigitalV.UserControls
         private System.Windows.Forms.BindingSource personBindingSource;
         private ManaDigitalDataSet manaDigitalDataSet;
         private System.Windows.Forms.BindingSource manaDigitalDataSetBindingSource;
+        private System.Windows.Forms.Button Refreshbutton;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -16,5 +16,10 @@ namespace ManaDigitalV.Forms
         {
             InitializeComponent();
         }
+
+        private void Returnbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
