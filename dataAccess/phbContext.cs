@@ -15,7 +15,7 @@ namespace dataAccess
 
         }
         public DbSet<person> persons { get; set; }
-        public DbSet<group> groups { set; get; }
+        public DbSet<groups> groups { get; set; }
         public DbSet<personPhone> phopersonPhones { set; get; }
         public DbSet<personDetail> personDetails { set; get; }
         public DbSet<Login> logins { set; get; }

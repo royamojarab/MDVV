@@ -36,20 +36,22 @@ namespace ManaDigitalV.Forms
             // Faillabel
             // 
             this.Faillabel.AutoSize = true;
+            this.Faillabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Faillabel.ForeColor = System.Drawing.Color.Silver;
             this.Faillabel.Location = new System.Drawing.Point(12, 9);
             this.Faillabel.Name = "Faillabel";
-            this.Faillabel.Size = new System.Drawing.Size(120, 13);
+            this.Faillabel.Size = new System.Drawing.Size(108, 20);
             this.Faillabel.TabIndex = 2;
             this.Faillabel.Text = "اطلاعات شما اشتباه است";
             this.Faillabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Returnbutton
             // 
+            this.Returnbutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Returnbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.Returnbutton.Location = new System.Drawing.Point(40, 52);
+            this.Returnbutton.Location = new System.Drawing.Point(39, 47);
             this.Returnbutton.Name = "Returnbutton";
-            this.Returnbutton.Size = new System.Drawing.Size(54, 20);
+            this.Returnbutton.Size = new System.Drawing.Size(55, 25);
             this.Returnbutton.TabIndex = 1;
             this.Returnbutton.Text = "بازگشت";
             this.Returnbutton.UseVisualStyleBackColor = true;

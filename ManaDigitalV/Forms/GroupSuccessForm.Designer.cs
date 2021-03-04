@@ -36,18 +36,20 @@ namespace ManaDigitalV.Forms
             // GroupSuccesslabel
             // 
             this.GroupSuccesslabel.AutoSize = true;
+            this.GroupSuccesslabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.GroupSuccesslabel.Location = new System.Drawing.Point(10, 9);
             this.GroupSuccesslabel.Name = "GroupSuccesslabel";
-            this.GroupSuccesslabel.Size = new System.Drawing.Size(115, 13);
+            this.GroupSuccesslabel.Size = new System.Drawing.Size(104, 20);
             this.GroupSuccesslabel.TabIndex = 0;
             this.GroupSuccesslabel.Text = "گروه با موفقیت ثبت شد";
             // 
             // Nextbutton
             // 
+            this.Nextbutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Nextbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.Nextbutton.Location = new System.Drawing.Point(48, 52);
+            this.Nextbutton.Location = new System.Drawing.Point(44, 49);
             this.Nextbutton.Name = "Nextbutton";
-            this.Nextbutton.Size = new System.Drawing.Size(39, 20);
+            this.Nextbutton.Size = new System.Drawing.Size(43, 23);
             this.Nextbutton.TabIndex = 1;
             this.Nextbutton.Text = "ادامه";
             this.Nextbutton.UseVisualStyleBackColor = true;

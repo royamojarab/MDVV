@@ -49,21 +49,22 @@ namespace ManaDigitalV.UserControls
             // MakeGrouplabel
             // 
             this.MakeGrouplabel.AutoSize = true;
-            this.MakeGrouplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MakeGrouplabel.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.MakeGrouplabel.ForeColor = System.Drawing.Color.Silver;
             this.MakeGrouplabel.Location = new System.Drawing.Point(506, 27);
             this.MakeGrouplabel.Name = "MakeGrouplabel";
-            this.MakeGrouplabel.Size = new System.Drawing.Size(86, 17);
+            this.MakeGrouplabel.Size = new System.Drawing.Size(96, 24);
             this.MakeGrouplabel.TabIndex = 0;
             this.MakeGrouplabel.Text = ":ایجاد گروه جدید";
             // 
             // GroupNamelabel
             // 
             this.GroupNamelabel.AutoSize = true;
+            this.GroupNamelabel.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.GroupNamelabel.ForeColor = System.Drawing.Color.Silver;
-            this.GroupNamelabel.Location = new System.Drawing.Point(545, 66);
+            this.GroupNamelabel.Location = new System.Drawing.Point(553, 66);
             this.GroupNamelabel.Name = "GroupNamelabel";
-            this.GroupNamelabel.Size = new System.Drawing.Size(47, 13);
+            this.GroupNamelabel.Size = new System.Drawing.Size(49, 24);
             this.GroupNamelabel.TabIndex = 1;
             this.GroupNamelabel.Text = "نام گروه";
             // 
@@ -83,7 +84,7 @@ namespace ManaDigitalV.UserControls
             this.GroupNamebunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.GroupNamebunifuMaterialTextbox1.LineThickness = 3;
             this.GroupNamebunifuMaterialTextbox1.Location = new System.Drawing.Point(445, 83);
-            this.GroupNamebunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupNamebunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupNamebunifuMaterialTextbox1.MaxLength = 32767;
             this.GroupNamebunifuMaterialTextbox1.Name = "GroupNamebunifuMaterialTextbox1";
             this.GroupNamebunifuMaterialTextbox1.Size = new System.Drawing.Size(119, 33);
@@ -99,7 +100,7 @@ namespace ManaDigitalV.UserControls
             this.NewGroupMemberlistBox.DisplayMember = "fullName";
             this.NewGroupMemberlistBox.ForeColor = System.Drawing.Color.Silver;
             this.NewGroupMemberlistBox.FormattingEnabled = true;
-            this.NewGroupMemberlistBox.Location = new System.Drawing.Point(445, 154);
+            this.NewGroupMemberlistBox.Location = new System.Drawing.Point(445, 153);
             this.NewGroupMemberlistBox.Name = "NewGroupMemberlistBox";
             this.NewGroupMemberlistBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.NewGroupMemberlistBox.Size = new System.Drawing.Size(119, 186);
@@ -124,7 +125,7 @@ namespace ManaDigitalV.UserControls
             this.MemberslistBox.DisplayMember = "fullName";
             this.MemberslistBox.ForeColor = System.Drawing.Color.Silver;
             this.MemberslistBox.FormattingEnabled = true;
-            this.MemberslistBox.Location = new System.Drawing.Point(166, 115);
+            this.MemberslistBox.Location = new System.Drawing.Point(166, 114);
             this.MemberslistBox.Name = "MemberslistBox";
             this.MemberslistBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.MemberslistBox.Size = new System.Drawing.Size(119, 225);
@@ -135,10 +136,11 @@ namespace ManaDigitalV.UserControls
             // Memberslabel
             // 
             this.Memberslabel.AutoSize = true;
+            this.Memberslabel.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Memberslabel.ForeColor = System.Drawing.Color.Silver;
             this.Memberslabel.Location = new System.Drawing.Point(243, 66);
             this.Memberslabel.Name = "Memberslabel";
-            this.Memberslabel.Size = new System.Drawing.Size(42, 13);
+            this.Memberslabel.Size = new System.Drawing.Size(45, 24);
             this.Memberslabel.TabIndex = 5;
             this.Memberslabel.Text = "کاربران";
             // 
@@ -146,10 +148,11 @@ namespace ManaDigitalV.UserControls
             // 
             this.GroupListbutton.FlatAppearance.BorderSize = 0;
             this.GroupListbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GroupListbutton.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.GroupListbutton.ForeColor = System.Drawing.Color.Silver;
-            this.GroupListbutton.Location = new System.Drawing.Point(3, 370);
+            this.GroupListbutton.Location = new System.Drawing.Point(3, 358);
             this.GroupListbutton.Name = "GroupListbutton";
-            this.GroupListbutton.Size = new System.Drawing.Size(94, 23);
+            this.GroupListbutton.Size = new System.Drawing.Size(94, 35);
             this.GroupListbutton.TabIndex = 5;
             this.GroupListbutton.Text = "مشاهده گروه ها";
             this.GroupListbutton.UseVisualStyleBackColor = true;

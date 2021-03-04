@@ -90,5 +90,23 @@ namespace ManaDigitalV.Forms
         {
 
         }
+
+        private void Supportbutton_Click(object sender, EventArgs e)
+        {
+            ContactUsUserControl cuc = new ContactUsUserControl();
+            Sliderpanel.Top = Supportbutton.Top;
+            Sliderpanel.Height = Supportbutton.Height;
+            Motherpanel.Controls.Clear();
+            Motherpanel.Controls.Add(cuc);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ChartUserControl ctuc = new ChartUserControl();
+            Sliderpanel.Top = Chartbutton.Top;
+            Sliderpanel.Height = Chartbutton.Height;
+            Motherpanel.Controls.Clear();
+            Motherpanel.Controls.Add(ctuc);
+        }
     }
 }

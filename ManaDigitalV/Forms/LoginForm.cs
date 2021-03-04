@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows;
 
+using dataLogic;
+
 namespace ManaDigitalV
 {
     public partial class LoginForm : Form
@@ -29,16 +31,17 @@ namespace ManaDigitalV
 
         private void Loginbutton1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=.;Initial Catalog=ManaDigital;Integrated Security=true";
-            con.Open();
+            //SqlConnection con = new SqlConnection();
+            //con.ConnectionString = "Data Source=.;Initial Catalog=ManaDigital;Integrated Security=true";
+            //con.Open();
             string userid = UserbunifuMaterialTextbox1.Text;
             string password = PassbunifuMaterialTextbox2.Text;
-            SqlCommand cmd = new SqlCommand($"select [user], [password] from [Logins] where [user] = '{UserbunifuMaterialTextbox1.Text}' and [password] = '{PassbunifuMaterialTextbox2.Text}';", con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            //SqlCommand cmd = new SqlCommand($"select [user], [password] from [Logins] where [user] = '{UserbunifuMaterialTextbox1.Text}' and [password] = '{PassbunifuMaterialTextbox2.Text}';", con);
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            var result = new userLogic().login(userid, password);
+            if (result)
             {
                 SuccessLoginForm SLF = new SuccessLoginForm();
                
@@ -60,7 +63,7 @@ namespace ManaDigitalV
                 
 
             }
-            con.Close();
+          //  con.Close();
 
 
 

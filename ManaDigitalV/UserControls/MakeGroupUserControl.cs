@@ -26,18 +26,15 @@ namespace ManaDigitalV.UserControls
         }
 
         GroupListsUserControl glc = new GroupListsUserControl();
-        bool search(group g)
-        {
-            phbContext db2 = new phbContext();
-            return db2.groups.Any(i => i.groupName.Contains(g.groupName));
-        }
+      
         void register(group g)
         {
-            phbContext db3 = new phbContext();
-            if (g.groupName.Length >= 2 && search(g) != true)
+           // phbContext db3 = new phbContext();
+            if (g.groupName.Length >= 2 && new CRUD_Group().search(g) != true)
             {
-                db3.groups.Add(new group { groupName = g.groupName, persons = g.persons });
-                db3.SaveChanges();
+                // db3.groups.Add(new group { groupName = g.groupName, persons = g.persons });
+                // db3.SaveChanges();
+                new CRUD_Group().Create(new group { groupName = g.groupName, persons = g.persons });
                 GroupSuccessForm gsf = new GroupSuccessForm();
                 gsf.Show();
 
@@ -123,8 +120,8 @@ namespace ManaDigitalV.UserControls
 
         private void Refreshbutton_Click(object sender, EventArgs e)
         {
-            phbContext db = new phbContext();
-            pList = db.persons.ToList();
+
+            pList = new CRUD_Person().ReadAll();
             MemberslistBox.DataSource = pList;
 
             NewGroupMemberlistBox.DataBindings.Clear();

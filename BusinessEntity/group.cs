@@ -8,12 +8,9 @@ namespace BusinessEntity
 {
     
     
-    public class group 
+    public class groups
     {
-        public group()
-        {
-
-        }
+        
         public int Id { get; set; }
         public string  persons { get; set; }
         public string groupName { get; set; }

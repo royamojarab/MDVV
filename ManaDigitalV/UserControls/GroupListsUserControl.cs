@@ -57,16 +57,15 @@ namespace ManaDigitalV.UserControls
         {
             selectedGroup = (group)GroupNamelistBox.SelectedItem;
             List<int> ids = selectedGroup.persons.Split(',').Select(s => Convert.ToInt32(s)).ToList();
-            phbContext db1 = new phbContext();
-            selectedGroupPersons = db1.persons.Where(w => ids.Contains(w.Id)).ToList();
+            //
+            selectedGroupPersons = new CRUD_Person().ReadAll();
             MemberslistBox.DataSource = selectedGroupPersons;
         }
 
         private void Refreshbutton_Click(object sender, EventArgs e)
         {
             List<group> pList = new List<group>();
-            phbContext db = new phbContext();
-            pList = db.groups.ToList();
+            pList = new CRUD_Group().ReadAll();
             GroupNamelistBox.DataSource = pList;
         }
     }

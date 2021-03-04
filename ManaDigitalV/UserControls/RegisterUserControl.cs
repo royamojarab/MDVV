@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessEntity;
 using dataAccess;
+using dataAccess.CRUD;
 using ManaDigitalV.Forms;
 
 namespace ManaDigitalV.UserControls
@@ -32,24 +33,39 @@ namespace ManaDigitalV.UserControls
 
         }
 
-        public void register(person p, personDetail pd, personPhone pp)
+        public bool register(person p, personDetail pd, personPhone pp)
         {
+            CRUD_Person cp = new CRUD_Person();
+            CRUD_PersonDetail cpd = new CRUD_PersonDetail();
+            CRUD_personPhone cpp = new CRUD_personPhone();
             phbContext db1 = new phbContext();
             if (p.Age >= 18 && search(p) != true)
             {
-                db1.persons.Add(new person { fullName = p.fullName, relation = p.relation, Age = p.Age, Image = savedPath });
-                db1.personDetails.Add(new personDetail { parameter = pd.parameter, Address = pd.Address });
-                db1.phopersonPhones.Add(new personPhone { phoneNumber = pp.phoneNumber });
-                db1.SaveChanges();
+                var person = new person { fullName = p.fullName, relation = p.relation, Age = p.Age, Image = savedPath };
+                var prsn = cp.Create(person);
+                //  db1.persons.Add(new person { fullName = p.fullName, relation = p.relation, Age = p.Age, Image = savedPath });
+                // db1.personDetails.Add(new personDetail { parameter = pd.parameter, Address = pd.Address });
+                var prsnD = cpd.Create(new personDetail { parameter = pd.parameter, Address = pd.Address, personDataId = prsn?.Id ?? 0 });
+                // db1.phopersonPhones.Add(new personPhone { phoneNumber = pp.phoneNumber });
+                var prsnP = cpp.Create(new personPhone { phoneNumber = pp.phoneNumber, personDataId = prsn?.Id ?? 0 });
+
+
+
 
                 RegisterSubmitForm rsf = new RegisterSubmitForm();
                 rsf.Show();
+                if (prsnD != null && prsnP != null)
+                    return true;
+
+                //   return false;
+
             }
             else
             {
                 FailedRegisterSubmitForm frsf = new FailedRegisterSubmitForm();
                 frsf.Show();
             }
+            return false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -64,16 +80,28 @@ namespace ManaDigitalV.UserControls
 
         private void savebutton_Click(object sender, EventArgs e)
         {
-            register(new person
+            var result = register(new person
             {
                 fullName = NamebunifuMaterialTextbox.Text,
                 Age = Convert.ToInt32(AgenumericUpDown.Value),
                 relation = RelationbunifuMaterialTextbox.Text,
-                Image = savedPath
+                Image = savedPath,
+
             },
-        new personDetail { Address = AddressbunifuMaterialTextbox.Text },
-        new personPhone { phoneNumber = PhonebunifuMaterialTextbox.Text, }
-        );
+            new personDetail { Address = AddressbunifuMaterialTextbox.Text, parameter = GroupcomboBox.Text },
+            new personPhone { phoneNumber = PhonebunifuMaterialTextbox.Text, }
+            );
+            if (result)
+            {
+                NamebunifuMaterialTextbox.Text = "";
+                AgenumericUpDown.Value = 0;
+                RelationbunifuMaterialTextbox.Text = "";
+                savedPath = "";
+                AddressbunifuMaterialTextbox.Text = "";
+                PhonebunifuMaterialTextbox.Text = "";
+                GroupcomboBox.SelectedIndex = -1;
+
+            }
         }
 
         private void CVChoosebutton_Click(object sender, EventArgs e)
@@ -88,7 +116,8 @@ namespace ManaDigitalV.UserControls
                 {
                     if (openFileDialog1.CheckFileExists)
                     {
-                        ////////////////////////////
+                        pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+
                     }
 
                 }
@@ -135,6 +164,26 @@ namespace ManaDigitalV.UserControls
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void PhonebunifuMaterialTextbox_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NamebunifuMaterialTextbox_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

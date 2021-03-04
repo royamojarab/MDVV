@@ -54,3 +54,6 @@ C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csproj.Cor
 C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.csproj.CopyComplete
 C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.dll
 C:\Users\roya\source\repos\ManaDigitalV\dataLogic\obj\Debug\dataLogic.pdb
+C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\dataLogic.dll.config
+C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\roya\source\repos\ManaDigitalV\dataLogic\bin\Debug\EntityFramework.SqlServer.xml

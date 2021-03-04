@@ -36,18 +36,20 @@ namespace ManaDigitalV.Forms
             // RegisterSubmitlabel
             // 
             this.RegisterSubmitlabel.AutoSize = true;
-            this.RegisterSubmitlabel.Location = new System.Drawing.Point(-3, 9);
+            this.RegisterSubmitlabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.RegisterSubmitlabel.Location = new System.Drawing.Point(12, 9);
             this.RegisterSubmitlabel.Name = "RegisterSubmitlabel";
-            this.RegisterSubmitlabel.Size = new System.Drawing.Size(143, 13);
+            this.RegisterSubmitlabel.Size = new System.Drawing.Size(128, 20);
             this.RegisterSubmitlabel.TabIndex = 0;
             this.RegisterSubmitlabel.Text = "ثبت نام کاربر موفقیت آمیز بود";
             // 
             // Nextbutton
             // 
+            this.Nextbutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Nextbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.Nextbutton.Location = new System.Drawing.Point(48, 52);
+            this.Nextbutton.Location = new System.Drawing.Point(44, 49);
             this.Nextbutton.Name = "Nextbutton";
-            this.Nextbutton.Size = new System.Drawing.Size(39, 20);
+            this.Nextbutton.Size = new System.Drawing.Size(52, 23);
             this.Nextbutton.TabIndex = 1;
             this.Nextbutton.Text = "ادامه";
             this.Nextbutton.UseVisualStyleBackColor = true;

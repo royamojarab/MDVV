@@ -36,19 +36,22 @@ namespace ManaDigitalV.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "شما با موفقیت وارد شدید";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Nextbutton
             // 
+            this.Nextbutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Nextbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.Nextbutton.Location = new System.Drawing.Point(48, 52);
+            this.Nextbutton.Location = new System.Drawing.Point(46, 47);
             this.Nextbutton.Name = "Nextbutton";
-            this.Nextbutton.Size = new System.Drawing.Size(39, 20);
+            this.Nextbutton.Size = new System.Drawing.Size(41, 25);
             this.Nextbutton.TabIndex = 1;
             this.Nextbutton.Text = "ادامه";
             this.Nextbutton.UseVisualStyleBackColor = true;
@@ -65,6 +68,7 @@ namespace ManaDigitalV.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SuccessLoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.SuccessLoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,20 +36,22 @@ namespace ManaDigitalV.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(32, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "تغییرات ثبت شد";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Nextbutton
             // 
+            this.Nextbutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Nextbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.Nextbutton.Location = new System.Drawing.Point(46, 52);
+            this.Nextbutton.Location = new System.Drawing.Point(44, 48);
             this.Nextbutton.Name = "Nextbutton";
-            this.Nextbutton.Size = new System.Drawing.Size(40, 20);
+            this.Nextbutton.Size = new System.Drawing.Size(42, 24);
             this.Nextbutton.TabIndex = 1;
             this.Nextbutton.Text = "ادامه ";
             this.Nextbutton.UseVisualStyleBackColor = true;

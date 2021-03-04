@@ -48,26 +48,31 @@ namespace ManaDigitalV.UserControls
             this.savebutton = new System.Windows.Forms.Button();
             this.cancelbutton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AgenumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Namelabel
             // 
             this.Namelabel.AutoSize = true;
+            this.Namelabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Namelabel.ForeColor = System.Drawing.Color.Silver;
             this.Namelabel.Location = new System.Drawing.Point(449, 71);
             this.Namelabel.Name = "Namelabel";
-            this.Namelabel.Size = new System.Drawing.Size(94, 13);
+            this.Namelabel.Size = new System.Drawing.Size(79, 20);
             this.Namelabel.TabIndex = 0;
             this.Namelabel.Text = "نام و نام خانوادگی";
             // 
             // Relationlabel
             // 
             this.Relationlabel.AutoSize = true;
+            this.Relationlabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Relationlabel.ForeColor = System.Drawing.Color.Silver;
             this.Relationlabel.Location = new System.Drawing.Point(478, 149);
             this.Relationlabel.Name = "Relationlabel";
-            this.Relationlabel.Size = new System.Drawing.Size(65, 13);
+            this.Relationlabel.Size = new System.Drawing.Size(57, 20);
             this.Relationlabel.TabIndex = 1;
             this.Relationlabel.Text = "عنوان شغلی";
             this.Relationlabel.Click += new System.EventHandler(this.label2_Click);
@@ -75,53 +80,58 @@ namespace ManaDigitalV.UserControls
             // Addresslabel
             // 
             this.Addresslabel.AutoSize = true;
+            this.Addresslabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Addresslabel.ForeColor = System.Drawing.Color.Silver;
             this.Addresslabel.Location = new System.Drawing.Point(513, 305);
             this.Addresslabel.Name = "Addresslabel";
-            this.Addresslabel.Size = new System.Drawing.Size(30, 13);
+            this.Addresslabel.Size = new System.Drawing.Size(32, 20);
             this.Addresslabel.TabIndex = 3;
             this.Addresslabel.Text = "آدرس";
             // 
             // Agelabel
             // 
             this.Agelabel.AutoSize = true;
+            this.Agelabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Agelabel.ForeColor = System.Drawing.Color.Silver;
-            this.Agelabel.Location = new System.Drawing.Point(230, 71);
+            this.Agelabel.Location = new System.Drawing.Point(290, 71);
             this.Agelabel.Name = "Agelabel";
             this.Agelabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Agelabel.Size = new System.Drawing.Size(23, 13);
+            this.Agelabel.Size = new System.Drawing.Size(24, 20);
             this.Agelabel.TabIndex = 4;
             this.Agelabel.Text = "سن";
             // 
             // Grouplabel
             // 
             this.Grouplabel.AutoSize = true;
+            this.Grouplabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Grouplabel.ForeColor = System.Drawing.Color.Silver;
-            this.Grouplabel.Location = new System.Drawing.Point(222, 149);
+            this.Grouplabel.Location = new System.Drawing.Point(282, 149);
             this.Grouplabel.Name = "Grouplabel";
             this.Grouplabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Grouplabel.Size = new System.Drawing.Size(31, 13);
+            this.Grouplabel.Size = new System.Drawing.Size(27, 20);
             this.Grouplabel.TabIndex = 5;
             this.Grouplabel.Text = "گروه";
             // 
             // CVUploaderlabel
             // 
             this.CVUploaderlabel.AutoSize = true;
+            this.CVUploaderlabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.CVUploaderlabel.ForeColor = System.Drawing.Color.Silver;
-            this.CVUploaderlabel.Location = new System.Drawing.Point(195, 227);
+            this.CVUploaderlabel.Location = new System.Drawing.Point(255, 227);
             this.CVUploaderlabel.Name = "CVUploaderlabel";
             this.CVUploaderlabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CVUploaderlabel.Size = new System.Drawing.Size(58, 13);
+            this.CVUploaderlabel.Size = new System.Drawing.Size(52, 20);
             this.CVUploaderlabel.TabIndex = 6;
             this.CVUploaderlabel.Text = "آپلود رزومه";
             // 
             // Phonelabel
             // 
             this.Phonelabel.AutoSize = true;
+            this.Phonelabel.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Phonelabel.ForeColor = System.Drawing.Color.Silver;
             this.Phonelabel.Location = new System.Drawing.Point(485, 227);
             this.Phonelabel.Name = "Phonelabel";
-            this.Phonelabel.Size = new System.Drawing.Size(58, 13);
+            this.Phonelabel.Size = new System.Drawing.Size(54, 20);
             this.Phonelabel.TabIndex = 2;
             this.Phonelabel.Text = "شماره تلفن";
             // 
@@ -147,6 +157,7 @@ namespace ManaDigitalV.UserControls
             this.NamebunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
             this.NamebunifuMaterialTextbox.TabIndex = 1;
             this.NamebunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NamebunifuMaterialTextbox.OnValueChanged += new System.EventHandler(this.NamebunifuMaterialTextbox_OnValueChanged);
             // 
             // RelationbunifuMaterialTextbox
             // 
@@ -193,6 +204,7 @@ namespace ManaDigitalV.UserControls
             this.PhonebunifuMaterialTextbox.Size = new System.Drawing.Size(170, 24);
             this.PhonebunifuMaterialTextbox.TabIndex = 3;
             this.PhonebunifuMaterialTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PhonebunifuMaterialTextbox.OnValueChanged += new System.EventHandler(this.PhonebunifuMaterialTextbox_OnValueChanged);
             // 
             // AddressbunifuMaterialTextbox
             // 
@@ -222,7 +234,7 @@ namespace ManaDigitalV.UserControls
             this.AgenumericUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.AgenumericUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AgenumericUpDown.ForeColor = System.Drawing.Color.Silver;
-            this.AgenumericUpDown.Location = new System.Drawing.Point(139, 88);
+            this.AgenumericUpDown.Location = new System.Drawing.Point(199, 88);
             this.AgenumericUpDown.Name = "AgenumericUpDown";
             this.AgenumericUpDown.Size = new System.Drawing.Size(87, 20);
             this.AgenumericUpDown.TabIndex = 5;
@@ -243,19 +255,21 @@ namespace ManaDigitalV.UserControls
             "واحد ترابری",
             "حراست",
             "پشتیبانی"});
-            this.GroupcomboBox.Location = new System.Drawing.Point(139, 166);
+            this.GroupcomboBox.Location = new System.Drawing.Point(199, 166);
             this.GroupcomboBox.Name = "GroupcomboBox";
             this.GroupcomboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.GroupcomboBox.Size = new System.Drawing.Size(87, 21);
             this.GroupcomboBox.TabIndex = 6;
+            this.GroupcomboBox.SelectedIndexChanged += new System.EventHandler(this.GroupcomboBox_SelectedIndexChanged);
             // 
             // CVChoosebutton
             // 
             this.CVChoosebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CVChoosebutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.CVChoosebutton.ForeColor = System.Drawing.Color.Silver;
-            this.CVChoosebutton.Location = new System.Drawing.Point(139, 244);
+            this.CVChoosebutton.Location = new System.Drawing.Point(199, 244);
             this.CVChoosebutton.Name = "CVChoosebutton";
-            this.CVChoosebutton.Size = new System.Drawing.Size(87, 23);
+            this.CVChoosebutton.Size = new System.Drawing.Size(87, 32);
             this.CVChoosebutton.TabIndex = 7;
             this.CVChoosebutton.Text = "انتخاب فایل";
             this.CVChoosebutton.UseVisualStyleBackColor = true;
@@ -265,8 +279,9 @@ namespace ManaDigitalV.UserControls
             // 
             this.CVSaverbutton.FlatAppearance.BorderSize = 0;
             this.CVSaverbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CVSaverbutton.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.CVSaverbutton.ForeColor = System.Drawing.Color.Silver;
-            this.CVSaverbutton.Location = new System.Drawing.Point(139, 273);
+            this.CVSaverbutton.Location = new System.Drawing.Point(199, 282);
             this.CVSaverbutton.Name = "CVSaverbutton";
             this.CVSaverbutton.Size = new System.Drawing.Size(87, 23);
             this.CVSaverbutton.TabIndex = 8;
@@ -303,11 +318,35 @@ namespace ManaDigitalV.UserControls
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 88);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 208);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(53, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "عکس کاربر";
+            // 
             // RegisterUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cancelbutton);
             this.Controls.Add(this.savebutton);
             this.Controls.Add(this.CVSaverbutton);
@@ -329,6 +368,7 @@ namespace ManaDigitalV.UserControls
             this.Size = new System.Drawing.Size(625, 411);
             this.Load += new System.EventHandler(this.RegisterUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AgenumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +394,7 @@ namespace ManaDigitalV.UserControls
         public System.Windows.Forms.NumericUpDown AgenumericUpDown;
         public System.Windows.Forms.ComboBox GroupcomboBox;
         public System.Windows.Forms.Button CVSaverbutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

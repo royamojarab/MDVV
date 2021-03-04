@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="CRUD_Group.cs" />
+    <Compile Include="CRUD_Person.cs" />
+    <Compile Include="CRUD_PersonDetail.cs" />
+    <Compile Include="CRUD_personPhone.cs" />
+    <Compile Include="Groups.cs" />
     <Compile Include="Migrations\202101310747214_INIT.cs" />
     <Compile Include="Migrations\202101310747214_INIT.designer.cs">
       <DependentUpon>202101310747214_INIT.cs</DependentUpon>

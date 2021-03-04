@@ -23,5 +23,15 @@ namespace ManaDigitalV.Forms
             this.Hide();
             DF.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SuccessLoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
